@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Day5 - Counter</string>
+    <string name="increment">Increment</string>
+</resources>
