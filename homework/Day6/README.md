@@ -9,3 +9,5 @@
 * If the user clicks the "Enter" button again then the value previously enter will be pre-filled in the input field
 
 When complete, zip up the project folder and submit it to Titus.
+
+[Example App Video](./day_6_homework.webm)
