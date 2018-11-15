@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2db3006-04ba-426e-9946-57b6b9fcabf8" name="Default" comment="" />
+    <list default="true" id="e2db3006-04ba-426e-9946-57b6b9fcabf8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2584,6 +2586,14 @@
       <option name="presentableId" value="Default" />
       <updated>1542319230419</updated>
     </task>
+    <task id="LOCAL-00001" summary="fizzbuzz homework">
+      <created>1542325259557</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542325259557</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2623,6 +2633,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fizzbuzz homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="fizzbuzz homework" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
