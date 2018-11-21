@@ -10,3 +10,5 @@ For the homework you need to add a new screen to the nav_graph that will be the 
 
 
 [Example App Video](./day_10_homework.webm)
+
+![Example Nav Graph](./nav_graph.png)
