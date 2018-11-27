@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DogCeo</string>
+
+    <string name="random_image">Random Image</string>
+    <string name="breed_list">Breed List</string>
+
+    <string name="mark_as_favorite">Mark As Favorite</string>
+</resources>
