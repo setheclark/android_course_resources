@@ -14,6 +14,7 @@ import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import io.sethclark.dogceo.Injection
 import io.sethclark.dogceo.R
+import kotlinx.android.synthetic.main.fragment_dog_image.*
 
 class DogImageFragment : Fragment() {
 
@@ -26,10 +27,28 @@ class DogImageFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val viewModelFactory = Injection.provideViewModelFactory()
+        val viewModelFactory = Injection.provideViewModelFactory(context!!)
         viewModel = ViewModelProviders.of(this, viewModelFactory).get(RandomDogImageViewModel::class.java)
 
-        viewModel.setBreed(args.breed, args.subBreed)
+        val sp = Injection.provideAppSharedPreferences(context!!)
+
+        var breed: String? = args.breed
+        var subBreed: String? = args.subBreed
+
+        if (breed == null) {
+            button_favorite.visibility = View.GONE
+            breed = sp.getString("breed", null)
+            subBreed = sp.getString("subBreed", null)
+        } else {
+            button_favorite.setOnClickListener {
+                sp.edit()
+                    .putString("breed", args.breed)
+                    .putString("subBreed", args.subBreed)
+                    .apply()
+            }
+        }
+
+        viewModel.setBreed(breed, subBreed)
 
         viewModel.screenState.observe(this, Observer { screenState ->
             screenState?.let {
