@@ -12,6 +12,9 @@ fun updateBreed(breed: Breed)
 
 @Query("SELECT * FROM breeds WHERE favorite=1 ORDER BY RANDOM() LIMIT 1")
 fun randomFavoriteBreed(): Breed
+
+@Query("SELECT * FROM breeds WHERE id = :id")
+fun breedForId(id: Int): LiveData<Breed?>
 ```
 
 Going straight from the home screen to the dog image screen should display an image of one of their favorite breeds.  If there are no favorite breeds, then just show a random dog image.
